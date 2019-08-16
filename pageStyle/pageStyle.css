@@ -1,0 +1,174 @@
+/* General formatting for html files */
+
+body {
+	font: normal 80% verdana;
+	background: #414141;
+	color: #333333;
+}
+
+p {
+	line-height: 175%;
+}
+
+h1 {
+	font: normal 220% verdana;
+	color: #333333;
+}
+
+h2 {
+	font: normal 150% verdana;
+	color: #333333;
+	padding: 15px 0 0 0;
+}
+
+img {
+	width: 100%;
+	float: right;
+}
+
+/* Formatting for ID/class attributes, which take the following structure:
+	  main
+			header
+				image
+				banner
+				menu
+					menuList
+			content
+				rightSide (only in Home page)
+				leftSide (only in Home page)
+			footer
+*/
+
+#main, #header, #image, #banner, #menu, #menuList, #content, #footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#main {
+	width: 1000px;
+}
+
+#header {
+	width: 1000px;
+}
+
+#image {
+	float: right;
+	width: 200px;
+	height: 175px;
+}
+
+#banner {
+	padding: 0 20px 20px 20px;
+	width: 1000px;
+	height: 175px;
+	background: #414141;
+	font: normal 80% verdana;
+}
+
+#banner h1 {
+	font: normal 400% verdana;
+	color: #F6F6F6;
+	text-transform: none;
+	margin: 0 0 0 0;
+	padding: 15px 0 0 0;
+	letter-spacing: 0.07em;
+	text-decoration: none;
+}
+
+#menu {
+	width: 1000px;
+	height: 35px;
+	padding: 10px 0 0 0;
+	margin: -50px 0 0 0;
+	float: left;
+}
+
+/* Formatting for unordered list within the menu */
+
+ul#menuList {
+	margin: 0 0 0 0;
+}
+
+ul#menuList li {
+	margin: 5px 0 0 0;
+	float: left;
+	padding: 0 10px 0 10px;
+	list-style: none;
+}
+
+ul#menuList li a {
+	font: normal 120% verdana;
+	float: left;
+	height: 20px;
+	text-decoration: none;
+	padding: 9px 22px 5px 16px;
+	text-align: center;
+	color: #F6F6F6;
+}
+
+/* Specific formatting for "selected" class attribute */
+
+ul#menuList li.selected {
+	margin: 7px 0 0 0;
+	background: #FFF;
+}
+
+ul#menuList li.selected a {
+	height: 25px;
+	color: #333333;
+	padding: 7px 22px 5px 16px;
+}
+
+/* Specific formatting for content */
+
+#content {
+	text-align: left;
+	width: 1000px;
+	background: #FFF;
+	float: left;
+	padding: 20px 20px 20px 20px;
+}
+
+/* Formatting for rightSide and leftSide of Home page */
+
+.rightSide {
+	float: right;
+  width: 240px;
+  padding: 52px 0 0 0;
+}
+
+.leftSide {
+	float: left;
+	width: 720px;
+}
+
+/* Formatting for lists within content */
+
+ul#categoryList {
+	line-height: 175%;
+	list-style: square;
+}
+
+ol#citationList {
+	line-height: 175%;
+}
+
+/* Specific formatting for footer */
+
+#footer {
+	width: 1000px;
+	height: 30px;
+	overflow: hidden;
+	padding: 20px 20px 2px 20px;
+	text-align: center;
+	background: #F6F6F6;
+	color: #333333;
+	letter-spacing: 20%;
+	font-size: 80%;
+}
+
+#footer a {
+	color: #333333;
+	text-decoration: none;
+}
